@@ -264,6 +264,10 @@ body {
     border-bottom: 1px solid black;
 }
 
+.footer__logo-image-container:hover {
+    cursor: pointer;
+}
+
 .footer__logo-image {
     max-height: 50px;
 }
