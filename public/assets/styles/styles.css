@@ -244,3 +244,78 @@ body {
     width: 100%;
     height: auto;
 }
+
+/*<------------------------------------- footer ------------------------------------>*/
+.footer {
+    background-color: var(--color-bg-primary);
+    height: 40vh;
+    text-align: center;
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    padding: 0 64px;
+}
+
+.footer__contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+    border-bottom: 1px solid black;
+}
+
+.footer__logo-image {
+    max-height: 50px;
+}
+
+.footer__contact-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 12px;
+}
+
+.footer__contact-link {
+    text-decoration: none;
+}
+
+.footer__contact-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    color: var(--color-text-primary);
+}
+
+.footer__policies {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex: 1;
+    align-items: center;
+}
+
+.footer__policies-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer__policies-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer__policies-link {
+    font-size: 14px;
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+.footer__policies-item:hover .footer__policies-link {
+    text-decoration: underline;
+}
