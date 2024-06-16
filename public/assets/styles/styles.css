@@ -118,3 +118,129 @@ body {
     font-size: 14px;
     position: relative;
 }
+
+/*<------------------------------------- main ------------------------------------>*/
+.main {
+    background-color: var(--color-bg-secondary);
+}
+
+.main__hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/assets/images/wildcard-medium.jpg') center/cover no-repeat;
+    text-align: center;
+    color: var(--color-text-secondary);
+    background-attachment: fixed;
+    position: relative;
+}
+
+.main__hero::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    animation: hero-layer 1.5s ease-in-out forwards;
+}
+
+.main__hero-title {
+    font-size: 48px;
+    z-index: 3;
+    opacity: 0;
+    animation: hero-title 1s 1.5s ease-in-out forwards;
+}
+
+.main__hero-text {
+    font-size: 18px;
+    z-index: 3;
+    opacity: 0;
+    animation: hero-text 1s 2s ease-in-out forwards;
+}
+
+@keyframes hero-layer {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes hero-title {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hero-text {
+    from {
+        transform: translateY(400%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main__benefits {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 50px 20px 60px;
+    height: 105vh;
+    gap: 80px;
+}
+
+.main__benefits-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+.main__benefit {
+    padding-left: 32px;
+}
+
+.main__benefits-container::before {
+    content: "";
+    width: 3px;
+    height: 20%;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 15%;
+}
+
+.main__benefit-title {
+    font-size: 32px;
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+.main__benefit-text {
+    font-size: 16px;
+    color: var(--color-text-primary);
+    margin: 16px 0;
+}
+
+.main__benefits-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__benefits-image {
+    width: 100%;
+    height: auto;
+}
