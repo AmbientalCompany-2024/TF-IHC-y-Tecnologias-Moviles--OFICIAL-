@@ -1,0 +1,120 @@
+:root {
+    --color-bg-primary: #B2DDCB; /* Primary background color */
+    --color-bg-secondary: #5EA89C; /* Secondary background color */
+    --color-bg-tertiary: #51927A; /* Tertiary background color */
+    --color-text-primary: #000000; /* Primary text color */
+    --color-text-secondary: #FFFFFF; /* Secondary text color */
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    color: var(--color-text-primary);
+}
+
+/*<------------------------------------- Header ------------------------------------>*/
+.header {
+    height: 10vh;
+    background-color: var(--color-bg-primary);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+    padding: 0 3%;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header__nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.header__nav-item {
+    display: flex;
+}
+
+.header__nav-link {
+    color: var(--color-text-primary);
+    font-weight: 400;
+    text-decoration: none;
+    align-self: center;
+    position: relative;
+}
+
+#logo-link {
+    align-self: center;
+}
+
+.header__nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    background-color:  black;
+}
+
+.header__nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.header__actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__button {
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: 2px solid #38493F;
+    font-family: 'Roboto';
+    font-weight: 500;
+    cursor: pointer;
+    background-color:  transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+
+.header__button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #38493F;
+    position: absolute;
+    top: 0;
+}
+
+.header__button::before {
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+#login-button:hover::before{
+    left: 0;
+}
+
+#register-button:hover::before {
+    left: 0;
+}
+
+.header__button:hover{
+    color: var(--color-text-secondary);
+}
+
+.header__button-text {
+    font-size: 14px;
+    position: relative;
+}
