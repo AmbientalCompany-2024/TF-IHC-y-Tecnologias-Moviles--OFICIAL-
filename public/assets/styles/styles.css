@@ -130,7 +130,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('/public/assets/images/wildcard-medium.jpg') center/cover no-repeat;
+    background: url('../images/wildcard-medium.jpg') center/cover no-repeat;
     text-align: center;
     color: var(--color-text-secondary);
     background-attachment: fixed;
