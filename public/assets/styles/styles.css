@@ -92,7 +92,7 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #38493F;
+    background-color: #38493f;
     position: absolute;
     top: 0;
 }
@@ -199,6 +199,8 @@ body {
 }
 
 .main__benefits-container {
+    --top-pseudo: 0;
+    --height-pseudo: 0;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -209,28 +211,56 @@ body {
 
 .main__benefit {
     padding-left: 32px;
+    cursor: pointer;
+    position: relative;
+}
+
+.main__benefit::before {
+    position: absolute;
+    content: "";
+    height: 115%;
+    width: 105%;
+    background-color: rgba(56, 73, 63, 0.4);
+    left: 0;
+    top: -7.5%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.main__benefit:hover::before {
+    opacity: 1;
+    transition: opacity 0.2s ease;
 }
 
 .main__benefits-container::before {
     content: "";
     width: 3px;
-    height: 20%;
+    height: var(--height-pseudo);
     background-color: #000000;
     position: absolute;
     left: 0;
-    top: 15%;
+    top: var(--top-pseudo);
+    transition: all 0.4s ease;
+    z-index: 3;
+    border-radius: 2px;
 }
 
 .main__benefit-title {
     font-size: 32px;
     margin: 0;
     color: var(--color-text-primary);
+    z-index: 3;
+    position: relative;
 }
 
 .main__benefit-text {
     font-size: 16px;
     color: var(--color-text-primary);
     margin: 16px 0;
+    z-index: 3;
+    position: relative;
 }
 
 .main__benefits-image-container {
@@ -241,8 +271,8 @@ body {
 }
 
 .main__benefits-image {
-    width: 100%;
     height: auto;
+    max-width: 90%;
 }
 
 /*<------------------------------------- footer ------------------------------------>*/
@@ -290,7 +320,15 @@ body {
     border-radius: 50%;
     display: inline-block;
     color: var(--color-text-primary);
+    transition: all 0.4s ease;
 }
+
+.footer__contact-icon:hover {
+    color: var(--color-bg-secondary);
+    text-shadow: 0 0 2px var(--color-bg-secondary);
+    transform: translateZ(5px) scale(1.2);
+}
+
 
 .footer__policies {
     display: flex;
