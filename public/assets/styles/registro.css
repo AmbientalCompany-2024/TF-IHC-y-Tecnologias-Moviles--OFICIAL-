@@ -1,0 +1,122 @@
+:root {
+    --color-bg-primary: #B2DDCB; /* Primary background color */
+    --color-bg-secondary: #5EA89C; /* Secondary background color */
+    --color-bg-tertiary: #51927A; /* Tertiary background color */
+    --color-text-primary: #000000; /* Primary text color */
+    --color-text-secondary: #FFFFFF; /* Secondary text color */
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    color: var(--color-text-primary);
+}
+
+/*<------------------------------------- Main ------------------------------------>*/
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-secondary);
+}
+
+.main__create-account {
+    background-color: var(--color-bg-tertiary);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.main__create-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__create-account-close {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main__create-account-logo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main__create-account-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main__create-account-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__create-account-input {
+    border: 2px solid #38493F;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+}
+
+.main__create-account-input::placeholder {
+    color: var(--color-text-secondary);
+}
+
+.main__create-account-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.main__create-account-description {
+    font-size: 12px;
+    margin: 0 0 15px;
+}
+
+.main__create-account-dob {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main__create-account-select {
+    background: transparent;
+    border: 2px solid #38493F;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    width: 32%;
+}
+
+.main__create-account-button {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.main__create-account-button:hover {
+    transform: translateY(-2px);
+}
