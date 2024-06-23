@@ -1,6 +1,5 @@
 const benefitsContainer = document.querySelector('.main__benefits-container');
 const benefits = document.querySelectorAll('.main__benefit');
-const lineStyles = window.getComputedStyle(benefitsContainer, ':before');
 
 
 // vaores default 

@@ -115,164 +115,197 @@ body {
 }
 
 .header__button-text {
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
 }
 
 /*<------------------------------------- main ------------------------------------>*/
-.main {
-    background-color: var(--color-bg-secondary);
+.main__hero-image-container {
+    height: 58vh;
 }
 
-.main__hero {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url('../images/wildcard-medium.jpg') center/cover no-repeat;
-    text-align: center;
-    color: var(--color-text-secondary);
-    background-attachment: fixed;
-    position: relative;
-}
-
-.main__hero::after {
-    position: absolute;
-    content: "";
-    height: 100%;
+.main__hero-image {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    animation: hero-layer 1.5s ease-in-out forwards;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__hero-content {
+    background-color: var(--color-bg-secondary);
+    padding: 32px 50px;
+    display: flex;
+    align-items: center;
 }
 
 .main__hero-title {
     font-size: 48px;
-    z-index: 3;
-    opacity: 0;
-    animation: hero-title 1s 1.5s ease-in-out forwards;
+    font-weight: 700;
+    margin: 0;
+    width: 50%;
 }
 
-.main__hero-text {
-    font-size: 18px;
-    z-index: 3;
-    opacity: 0;
-    animation: hero-text 1s 2s ease-in-out forwards;
-}
-
-@keyframes hero-layer {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes hero-title {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes hero-text {
-    from {
-        transform: translateY(400%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.main__benefits {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 50px 20px 60px;
-    height: 105vh;
-    gap: 80px;
-}
-
-.main__benefits-container {
-    --top-pseudo: 0;
-    --height-pseudo: 0;
-    flex: 1;
+.main__hero-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    position: relative;
+    gap: 24px;
+    width: 50%;
 }
 
-.main__benefit {
-    padding-left: 32px;
+.main__hero-description {
+    font-size: 18px;
+    margin: 0;
+}
+
+.default-btn {
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-family: 'Roboto';
+    font-weight: 500;
     cursor: pointer;
-    position: relative;
+    transition: all 0.3s ease;
+    font-size: 18px;
 }
 
-.main__benefit::before {
-    position: absolute;
-    content: "";
-    height: 115%;
-    width: 105%;
-    background-color: rgba(56, 73, 63, 0.4);
-    left: 0;
-    top: -7.5%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 0;
+.default-btn:hover {
+    transform: translateY(-2px);
+}
+
+.black-btn {
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    color: var(--color-text-secondary);
+    background-color:  rgba(0, 0, 0, 1);
+    transition: all 0.3s ease;
+}
+
+.black-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.main__initiatives {
+    padding: 64px 50px;
+    background-color: var(--color-bg-tertiary);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--color-text-secondary);
+}
+
+.main__initiatives-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+}
+
+.main__initiatives-title {
+    font-size: 48px;
+    text-align: start;
+    margin: 0;
+}
+
+.main__initiatives-container {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 30px;
+}
+
+.main__initiative {
+    text-align: start;
+}
+
+.main__initiative-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main__initiative-description {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.white-btn {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: var(--color-text-secondary);
+    background-color:  transparent;
+    transition: all 0.3s ease;
+}
+
+.white-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main__initiatives-image-container {
+    width: 50%;
+}
+
+.main__initiatives-image {
     border-radius: 8px;
 }
 
-.main__benefit:hover::before {
-    opacity: 1;
-    transition: opacity 0.2s ease;
+.main__impact {
+    padding: 64px 32px;
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    align-items: center;
+    gap: 52px;
 }
 
-.main__benefits-container::before {
-    content: "";
-    width: 3px;
-    height: var(--height-pseudo);
-    background-color: #000000;
-    position: absolute;
-    left: 0;
-    top: var(--top-pseudo);
-    transition: all 0.4s ease;
-    z-index: 3;
-    border-radius: 2px;
-}
-
-.main__benefit-title {
-    font-size: 32px;
-    margin: 0;
-    color: var(--color-text-primary);
-    z-index: 3;
-    position: relative;
-}
-
-.main__benefit-text {
-    font-size: 16px;
-    color: var(--color-text-primary);
-    margin: 16px 0;
-    z-index: 3;
-    position: relative;
-}
-
-.main__benefits-image-container {
-    flex: 1;
+.main__impact-image-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.main__benefits-image {
-    height: auto;
-    max-width: 90%;
+.main__impact-image {
+    width: 85%;
+    border-radius: 8px;
+}
+
+.main__impact-content {
+    width: 50%;
+    text-align: start;
+}
+
+.main__impact-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.main__impact-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main__join {
+    text-align: start;
+    padding: 80px 40px;
+    background-color: var(--color-bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text-secondary);
+}
+
+.main__join-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.main__join-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main__join-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 /*<------------------------------------- footer ------------------------------------>*/

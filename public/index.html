@@ -1,68 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WideGreen</title>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
-    <script src="https://kit.fontawesome.com/f1d41843e3.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WideGreen</title>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/index.css" />
+        <script src="https://kit.fontawesome.com/f1d41843e3.js" crossorigin="anonymous"></script>
+      </head>
+<body>
     <!-- header -->
     <header class="header">
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a href="#" id="logo-link"><img src="./assets/images/logo.png" alt="WideGreen logo" /></a>
-          </li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Nuestro Equipo</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Acerca de</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Contactos</a></li>
-        </ul>
-        <div class="header__actions">
-          <button class="header__button" id="login-button">
-            <span class="header__button-text">Inicia Sesión</span>
-          </button>
-          <button class="header__button" id="register-button">
-            <span class="header__button-text">Regístrate</span>
-          </button>
-        </div>
-      </nav>
-    </header>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" id="logo-link"><img src="./assets/images/logo.png" alt="WideGreen logo" /></a>
+            </li>
+            <li class="header__nav-item"><a href="./nuestroEquipo.html" class="header__nav-link">Nuestro Equipo</a></li>
+            <li class="header__nav-item"><a href="./acercaDe.html" class="header__nav-link">Acerca de</a></li>
+            <li class="header__nav-item"><a href="./contactos.html" class="header__nav-link">Contactos</a></li>
+          </ul>
+          <div class="header__actions">
+            <button class="header__button" id="login-button">
+              <span class="header__button-text">Inicia Sesión</span>
+            </button>
+            <button class="header__button" id="register-button">
+              <span class="header__button-text">Regístrate</span>
+            </button>
+          </div>
+        </nav>
+      </header>
 
-    <!-- main content -->
-    <main class="main">
-      <section class="main__hero">
-        <h2 class="main__hero-title">
-          Colabore</br>Transmita</br>Inspire
-        </h2>
-        <p class="main__hero-text">Únete a nuestra red social y sé parte de la comunidad del cuidado del medio ambiente</p>
-      </section>
-
-      <section class="main__benefits">
-        <article class="main__benefits-container">
-          <div class="main__benefit">
-            <h2 class="main__benefit-title">Descubra comunidades ambientales prósperas</h2>
-            <p class="main__benefit-text">Únase a grupos, comparta sus experiencias con su comunidad y reaccione a las vivencias de otros usuarios</p>
-          </div>
-          <div class="main__benefit">
-            <h2 class="main__benefit-title">Comparta ideas y soluciones</h2>
-            <p class="main__benefit-text">Intercambie conocimientos, analice desafíos y encuentre soluciones innovadoras a problemas ambientales con una comunidad diversa de personas con conciencia ecológica</p>
-          </div>
-          <div class="main__benefit">
-            <h2 class="main__benefit-title">Manténgase informado</h2>
-            <p class="main__benefit-text">Acceda a la red social en su dispositivo móvil o computadora, asegurándose de poder mantenerse conectado e involucrado con la comunidad ambiental dondequiera que vaya</p>
-          </div>
-        </article>
-        <div class="main__benefits-image-container">
-          <img class="main__benefits-image" src="./assets/images/benefit.png" alt="benefit image">
+<!-- main content -->
+<main class="main">
+    <section class="main__hero">
+        <div class="main__hero-image-container">
+            <img class="main__hero-image" src="./assets/images/plant.png" alt="plantación">
         </div>
-      </section>
-    </main>
+        <div class="main__hero-content">
+            <h1 class="main__hero-title">Promueve el cuidado ambiental para un futuro sostenible</h1>
+            <div class="main__hero-wrapper">
+                <p class="main__hero-description">
+                WideGreen es una startup dedicada a fomentar, difundir e informar iniciativas de cuidado ambiental. Con nuestras herramientas innovadoras, nuestro objetivo es crear una comunidad comprometida con la preservación de nuestra ciudad.
+                </p>
+                <button class="main__hero-button default-btn black-btn">Leer más</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__initiatives">
+        <div class="main__initiatives-wrapper">
+            <h2 class="main__initiatives-title">Explore iniciativas ambientales cercanas a ti</h2>
+            <div class="main__initiatives-container">
+                <div class="main__initiative">
+                    <h3 class="main__initiative-title">50%</h3>
+                    <p class="main__initiative-description">Encuentre proyectos y organizaciones ambientales locales</p>
+                </div>
+                <div class="main__initiative">
+                    <h3 class="main__initiative-title">50%</h3>
+                    <p class="main__initiative-description">Conéctese con personas de ideas afines y comparta ideas</p>
+                </div>
+            </div>
+            <button class="main__initiatives-button default-btn white-btn">Leer más</button>
+        </div>
+        <div class="main__initiaves-image-container">
+            <img class="main__initiatives-image" src="./assets/images/phone.png" alt="">
+        </div>
+    </section>
+
+    <section class="main__impact">
+        <div class="main__impact-image-container">
+            <img src="./assets/images/persons.png" alt="Impact" class="main__impact-image">
+        </div>
+        <div class="main__impact-content">
+            <h2 class="main__impact-title">Apoya en el impacto ambiental y obtén recompensas</h2>
+            <p class="main__impact-description">
+                El sistema de niveles de WideGreen premia tus acciones de cuidado del medio ambiente, motivándote a generar un impacto positivo en el planeta. Cuantas más acciones realices, mayor será tu nivel y mejores serán las recompensas.
+            </p>
+            <button class="main__impact-button default-btn black-btn">Leer más</button>
+        </div>
+    </section>
+
+    <section class="main__join">
+        <div class="main__join-content">
+            <h2 class="main__join-title">Únase a WideGreen y marque la diferencia</h2>
+            <p class="main__join-description">Descubra, conéctese y contribuya en el cuidado del medio ambiente.</p>
+        </div>
+        <div class="main__join-buttons-container">
+            <button class="main__join-button default-btn black-btn">Inicia Sesión</button>
+            <button class="main__join-button default-btn white-btn">Regístrate</button>
+        </div>
+    </section>
+</main>
 
     <!-- footer -->
     <footer class="footer">
@@ -97,6 +129,5 @@
           </ul>
         </div>
       </footer>
-      <script src="./assets/scripts/contactos.js"></script>
-  </body>
+</body>
 </html>
