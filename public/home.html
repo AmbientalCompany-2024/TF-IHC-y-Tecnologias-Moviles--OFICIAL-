@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WideGreen</title>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/home.css" />
+        <script src="https://kit.fontawesome.com/f1d41843e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="layout">
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="#" id="logo-link"><img src="./assets/images/Logox3.png" alt="WideGreen logo" id="logo-image"/></a>
+                </li>
+                <li class="navbar__item"><a href="#" class="navbar__link"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li class="navbar__item"><a href="./noticias.html" class="navbar__link"><i class="fa-solid fa-newspaper"></i>Noticias</a></li>
+                <li class="navbar__item"><a href="./actividades.html" class="navbar__link"><i class="fa-solid fa-clipboard-list"></i>Actividades</a></li>
+                <li class="navbar__item"><a href="./mapa.html" class="navbar__link"><i class="fa-solid fa-map-location-dot"></i>Mapa</a></li>
+            </ul>
+            <div class="navbar__item-container">
+                <li class="navbar__item" id="logout-item"><a href="./index.html" class="navbar__link"><i class="fa-solid fa-arrow-right-from-bracket"></i>Salir</a></li>
+            </div>
+        </nav>
+        <main class="main">
+            <section class="main__publicaciones">
+                <div class="main__nueva-publicacion">
+                    <textarea class="main__nueva-publicacion-text" placeholder="¿Qué estás pensando?"></textarea>
+                    <div class="main__nueva-publicacion-actions">
+                        <div>
+                            <button class="main__nueva-publicacion-button image-btn"><i class="fa-solid fa-image"></i></button>
+                            <button class="main__nueva-publicacion-button tag-btn"><i class="fa-solid fa-tag"></i></button>
+                            <button class="main__nueva-publicacion-button location-btn"><i class="fa-solid fa-location-dot"></i></button>
+                        </div>
+                        <div>
+                            <button id="publicacion-btn">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__publicaciones-container">
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Laura_25</span>
+                            <span class="main__publicacion-date">02/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post1.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Descubriendo nuevos senderos en la naturaleza. ¡Cada paso es una aventura!</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">23</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">10</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">4</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Alex_1987</span>
+                            <span class="main__publicacion-date">03/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post2.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Disfrutando de la brisa marina en mi lugar favorito.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">35</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">8</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">6</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Maria_Gomez</span>
+                            <span class="main__publicacion-date">05/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post3.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Reflexiones sobre la importancia de vivir en armonía con la naturaleza.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">19</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">3</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">2</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Juan_Perez</span>
+                            <span class="main__publicacion-date">07/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post4.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Apoyando iniciativas comunitarias para un entorno más limpio.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">45</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">12</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">7</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Sofia_Rivera</span>
+                            <span class="main__publicacion-date">09/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post5.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Celebrando la belleza de nuestro planeta. Cada vista es una inspiración.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">30</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">5</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">3</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Daniel_Garcia</span>
+                            <span class="main__publicacion-date">10/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post6.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Promoviendo un estilo de vida más sostenible día a día.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">15</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">2</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">1</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Andrea_Martin</span>
+                            <span class="main__publicacion-date">12/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post7.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Explorando nuevas formas de conectar con la naturaleza en la ciudad.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">25</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">7</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">5</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Javier_Santos</span>
+                            <span class="main__publicacion-date">14/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post8.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Inspirando a otros a cuidar nuestro hogar compartido.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">40</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">9</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">8</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Carolina_Rios</span>
+                            <span class="main__publicacion-date">15/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post9.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Explorando la fauna local y aprendiendo sobre su importancia.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">18</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">4</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">2</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Lucas_Mendez</span>
+                            <span class="main__publicacion-date">17/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post10.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Agradecido por cada momento en la naturaleza. Hay tanto por descubrir.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">28</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">6</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">4</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Paula_Lopez</span>
+                            <span class="main__publicacion-date">19/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post11.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Comprometida con la protección de nuestras áreas verdes.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">22</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">5</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">3</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Gabriel_Rodriguez</span>
+                            <span class="main__publicacion-date">20/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post12.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Involucrado en iniciativas locales para un futuro más verde.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">33</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">8</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">6</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Valeria_Torres</span>
+                            <span class="main__publicacion-date">22/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post13.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Explorando bosques y aprendiendo sobre su biodiversidad.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">27</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">6</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">4</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Pedro_Gomez</span>
+                            <span class="main__publicacion-date">24/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post14.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Tomando acción para conservar nuestro entorno natural.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">38</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">11</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">7</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main__publicacion">
+                        <div class="main__publicacion-header">
+                            <span class="main__publicacion-username">Natalia_Martinez</span>
+                            <span class="main__publicacion-date">25/05/2024</span>
+                        </div>
+                        <div class="main__publicacion-body">
+                            <img src="./assets/images/post15.jpg" alt="Imagen de la publicación" class="main__publicacion-image" loading="lazy">
+                            <p class="main__publicacion-text">Educando a otros sobre la importancia de cuidar nuestra Tierra.</p>
+                        </div>
+                        <div class="main__publicacion-footer">
+                            <div class="main__publicacion-interaction">
+                                <button class="main__publicacion-button heart-btn">
+                                    <i class="fa-solid fa-heart"></i> <span class="main__publicacion-interaction-count">20</span>
+                                </button>
+                                <button class="main__publicacion-button comment-btn">
+                                    <i class="fa-solid fa-comment"></i> <span class="main__publicacion-interaction-count">4</span>
+                                </button>
+                                <button class="main__publicacion-button share-btn">
+                                    <i class="fa-solid fa-share"></i> <span class="main__publicacion-interaction-count">2</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./assets/scripts/home.js"></script>
+</body>
+</html>
